@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <style>
+    .dialog{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 100px;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h1 >countdown</h1>
+    </div>
+    <div id="head">
+        <h1>let's start </h1>
+        </div>
+    
+    
+      <div class="dialog"></div>
+    
+
+
+<script>
+    function showdialog(message){
+    const dialog = document.querySelector('.dialog');
+    dialog.textContent = message;
+    }
+    function ten(callback) {
+        setTimeout(() => {
+            showdialog('10');
+            callback();
+        }, 2000);
+    }
+    function nine(callback) {
+        setTimeout(() => {
+            showdialog('9');
+            callback();
+        }, 2000);
+    }
+    function eight(callback) {
+        setTimeout(() => {
+            showdialog('8');
+            callback();
+        }, 2000);
+    }
+    function seven(callback) {
+        setTimeout(() => {
+            showdialog('7');
+            callback();
+        }, 2000);
+    }
+    function six(callback) {
+        setTimeout(() => {
+            showdialog('6');
+            callback();
+        }, 2000);
+    }
+    function five(callback) {
+        setTimeout(() => {
+            showdialog('5');
+            callback();
+        }, 2000);
+    }
+    function four(callback) {
+        setTimeout(() => {
+            showdialog('4');
+            callback();
+        }, 2000);
+    }
+    function three(callback) {
+        setTimeout(() => {
+            showdialog('3');
+            callback();
+        }, 2000);
+    }
+    function two(callback) {
+        setTimeout(() => {
+            showdialog('2');
+            callback();
+        }, 2000);
+    }
+    function one(callback) {
+        setTimeout(() => {
+            showdialog('1');
+            callback();
+        }, 3000);
+    }
+    function zero(callback) {
+        setTimeout(() => {
+            showdialog('0');
+            callback();
+        }, 3000);
+    }
+
+    ten(function () {
+    nine(function () {
+        eight(function () {
+            seven(function () {
+                six(function () {
+                    five(function () {
+                        four(function () {
+                            three(function () {
+                                two(function () {
+                                    one(function () {
+                                        zero(function () {
+                                            showdialog('Happy Independent Day!');
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+});
+
+       
+    </script>
+
+</body>
+</html>
